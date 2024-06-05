@@ -1,0 +1,16 @@
+# Project
+/local/
+/build/
+/dist/
+/run/
+/srv/
+
+# Vim
+*.swp
+*.swo
+
+# Bazel outs
+bazel-*
+
+# macOS
+.DS_Store

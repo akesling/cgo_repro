@@ -14,3 +14,6 @@ bazel-*
 
 # macOS
 .DS_Store
+
+# Outputs
+db.sqlite3

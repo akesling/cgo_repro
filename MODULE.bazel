@@ -20,8 +20,13 @@ use_repo(
 )
 
 go_sdk = use_extension("@io_bazel_rules_go//go:extensions.bzl", "go_sdk")
-go_sdk.download(version = "1.21.1")
-go_sdk.host()
+go_version = "1.21.1"
+go_sdk.download(version = go_version)
+go_sdk.download(
+    version = go_version,
+    goarch = "amd64",
+    goos = "linux",
+)
 
 ################################################################################
 # Packaging Utilities ##########################################################
